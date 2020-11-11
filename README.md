@@ -12,5 +12,7 @@ AirNow provides an API, and I wanted to use this to both practice data science, 
 "All data provided by AirNow API are made possible by the efforts of more than 150 local, state, tribal, provincial, and federal government agencies (www.airnow.gov/index.cfm?action=airnow.partnerslist). These data are not fully verified or validated; they should be considered preliminary and are subject to change. Data and information reported to AirNow from federal, state, local, and tribal agencies are for the express purpose of reporting and forecasting the Air Quality Index (AQI).Therefore, they should not be used to formulate or support regulation, trends, guidance, or any other government or public decision making. Official regulatory air quality data must be obtained from EPA’s Air Quality System (AQS) (https://www.epa.gov/aqs). See the AirNow Data Exchange Guidelines at http://airnowapi.org/docs/DataUseGuidelines.pdf." 
 
 ## Useful Links:
-- AirNow [homepage](https://www.airnow.gov/?city=Los%20Angeles&state=CA&country=USA)
+- AirNow [homepage](https://www.airnow.gov/)
 - AirNow API [documentation](https://docs.airnowapi.org/)
+- AirNow API [FAQs](https://docs.airnowapi.org/faq)
+- AirNow API [Data Use Guidlines](https://docs.airnowapi.org/docs/DataUseGuidelines.pdf)
