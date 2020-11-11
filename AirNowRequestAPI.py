@@ -8,7 +8,7 @@ import requests
 #Local application imports
 from jprint import jprint
 
-#Define the url and parameters are just variables
+#Define the url, api key (hidden), and parameters
 url_endpoint = 'https://www.airnowapi.org/aq/observation/zipCode/current/'
 API_KEY = (os.environ.get("AIRNOW_API_KEY"))  #save api key as environmental variable
 parameters = {
