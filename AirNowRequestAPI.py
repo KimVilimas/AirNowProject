@@ -2,6 +2,7 @@
 import json
 import os
 import datetime
+import shutil
 
 # Third party imports/require pip install
 import requests
@@ -40,13 +41,24 @@ snapshot = {
 
 # Get the date/time variable set up so can put in exported file name
 date_time = datetime.datetime.now()
-formatted_date_time = date_time.strftime("%Y-%m-%d")  # I wanted to change formatting
+formatted_date_time = date_time.strftime("%Y-%m-%d-hour%H")  # I wanted to change format
 
 # Update snapshot dict to have a value for fetchtime
-snapshot["fetchtime"] = date_time.isoformat()   #have to use .isoformat()
+snapshot["fetchtime"] = date_time.isoformat()   #have to use .isoformat() to work
 
 # Write to file
 file_name = formatted_date_time + ".json"
 with open(file_name, "w") as write_file:
     json.dump(snapshot, write_file)  
-#use snapshot dict, which contains the data object plus the fetchtime
+#use snapshot dict, which contains the data object plus the fetchtime on top
+
+# You are going to get too many files, so move to its own folder
+shutil.move(".\\"+ formatted_date_time +".json", ".\\json_outputs")
+#the dot at the beggining denotes the cwd, so we can do relative path
+#create the empty folder json_outputs first
+
+
+# TODOS #
+#todo: set up with hues, so get their api set up, prob another script
+#todo: potentially have it delete/send to recycle the files after a while?
+#todo: still want json file sent to me somehow or no?
