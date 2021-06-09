@@ -1,7 +1,7 @@
 # AirNowProject
 
 ## What does this project do?
-This project retrieves real-time (by the hour) air quality data (particulate matter PM2.5) from a chosen zip code from the AirNow API, parses that JSON and creates a workable python object from it, passes it through some logic which attaches the appropriate color from the air quality color index to the retreived values, and then passes that info to my home's Hue Lights hub, where it can change a lamp with a hue light to the appropriate color that reflects the current air quality. I used Windows Task Scheduler to make this code run on the hour. Further TODO is to get this synced up with AWS rather than just my own machine running task scheduler. 
+This project retrieves real-time (by the hour) air quality data (particulate matter PM2.5) from a chosen zip code from the AirNow API, parses that JSON and creates a workable python object from it, passes it through some logic which attaches the appropriate color from the [U.S. Air Quality Index (AQI)](https://www.airnow.gov/aqi/aqi-basics/) to the retreived values, and then passes that info to my home's Hue Lights hub, where it can change a lamp with a hue light to the appropriate color that reflects the current air quality. I used Windows Task Scheduler to make this code run on the hour. Further TODO is to get this synced up with AWS rather than just my own machine running task scheduler. 
 
 ## Why am I doing this?
 I am personally invested in issues of air quality because I have asthma and the air quality is heavily tied to my quality of life. This helps me make better data-driven decisions by a quick easy glance at my lamp; for example, 'Is is a good time to open the window?' 'Is a good time for me to go on a walk?' etc. 
